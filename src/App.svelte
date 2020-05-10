@@ -105,15 +105,12 @@
 		].reduce(addWord, [])
 	}
 
-	export const slogan = function() {
-		const phrase = randomWords()
-		return `${phrase[0]} ${phrase[1]}. ${phrase[2]} ${phrase[3]}. ${phrase[4]} ${phrase[5]}.`
-	}
+	export const slogan = randomWords()
 </script>
 
 <main>
 	<p>The latest advice from the UK Government:</p>
-	<p class="slogan">{slogan()}</p>
+	<p class="slogan">{slogan[0]} {slogan[1]}.<br>{slogan[2]} {slogan[3]}.<br>{slogan[4]} {slogan[5]}.</p>
 	<p>Refresh the page for more.</p>
 	<p><small>
 		This is satire. For official advice and guidance from the UK Government, see: <a href="https://www.gov.uk/coronavirus">https://www.gov.uk/coronavirus</a>
@@ -142,7 +139,7 @@
 
 	@media (min-width: 640px) {
 		main {
-			max-width: 800px;
+			max-width: 1200px;
 		}
 
 		.slogan {
