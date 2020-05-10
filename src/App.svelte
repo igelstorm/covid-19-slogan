@@ -1,17 +1,30 @@
 <script>
 	const words = {
-		noun: [
-			"coronavirus",
-			"the NHS"
-		],
-		verb: [
-			"stop",
-			"protect"
-		]
+		positive: {
+			verb: [
+				"protect",
+				"help"
+			],
+			object: [
+				"the NHS",
+				"the public"
+			]
+		},
+		negative: {
+			verb: [
+				"stop",
+				"kill"
+			],
+			object: [
+				"coronavirus",
+				"the virus",
+				"the disease"
+			]
+		}
 	}
 
-	export const addWord = function(acc, type) {
-		const possibleWords = words[type].filter(
+	export const addWord = function(acc, wordType) {
+		const possibleWords = words[wordType.phrase][wordType.word].filter(
 			function(w) { return !acc.includes(w) }
 		)
 		const randomIndex = Math.floor(Math.random() * possibleWords.length)
@@ -21,10 +34,10 @@
 
 	const randomWords = function() {
 		return [
-			"verb",
-			"noun",
-			"verb",
-			"noun"
+			{phrase: "positive", word: "verb"},
+			{phrase: "positive", word: "object"},
+			{phrase: "negative", word: "verb"},
+			{phrase: "negative", word: "object"}
 		].reduce(addWord, [])
 	}
 
