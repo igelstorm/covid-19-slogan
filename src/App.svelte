@@ -5,6 +5,9 @@
 				"Protect",
 				"Save",
 				"Help",
+				"Preserve",
+				"Guard",
+				"Defend",
 			],
 			object: [
 				"the NHS",
@@ -13,6 +16,8 @@
 				"the public",
 				"the people",
 				"key workers",
+				"productivity",
+				"businesses",
 			]
 		},
 		negative: {
@@ -21,7 +26,13 @@
 				"Kill",
 				"Control",
 				"Avoid",
-				"Avoid",
+				"Fight",
+				"Prevent",
+				"Quash",
+				"Quell",
+				"Put an end to",
+				"Crush",
+				"Eliminate",
 			],
 			object: [
 				"coronavirus",
@@ -29,6 +40,11 @@
 				"disease",
 				"transmission",
 				"the pandemic",
+				"the epidemic",
+				"the plague",
+				"the scourge",
+				"the affliction",
+				"the blight",
 			]
 		},
 		intransitive: {
@@ -42,6 +58,15 @@
 				"alert",
 				"safe",
 				"with us",
+				"vigilant",
+				"watchful",
+				"on your guard",
+				"wary",
+				"careful",
+				"cautious",
+				"prudent",
+				"conscientious",
+				"mindful",
 			]
 		}
 	}
