@@ -2,9 +2,9 @@
 	const words = {
 		positive: {
 			verb: [
-				"protect",
-				"save",
-				"help"
+				"Protect",
+				"Save",
+				"Help"
 			],
 			object: [
 				"the NHS",
@@ -14,9 +14,9 @@
 		},
 		negative: {
 			verb: [
-				"stop",
-				"kill",
-				"control"
+				"Stop",
+				"Kill",
+				"Control"
 			],
 			object: [
 				"coronavirus",
@@ -26,9 +26,9 @@
 		},
 		intransitive: {
 			verb: [
-				"stay",
-				"be",
-				"remain"
+				"Stay",
+				"Be",
+				"Remain"
 			],
 			object: [
 				"at home",
@@ -77,22 +77,27 @@
 </script>
 
 <main>
-	<h1>{slogan()}</h1>
+	<p>The latest advice from the UK Government:</p>
+	<p class="slogan">{slogan()}</p>
 </main>
 
 <style>
 	main {
 		text-align: center;
-		padding: 1em;
-		max-width: 240px;
+		padding: 5rem 1rem;
 		margin: 0 auto;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+	}
+
+	.slogan {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		font-size: 3rem;
 	}
 
 	@media (min-width: 640px) {
