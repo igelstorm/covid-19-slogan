@@ -20,24 +20,46 @@
 				"the virus",
 				"the disease"
 			]
+		},
+		intransitive: {
+			verb: [
+				"stay",
+				"work"
+			],
+			object: [
+				"at home",
+				"with us"
+			]
 		}
 	}
 
-	export const addWord = function(acc, wordType) {
+	const sampleFrom = function(arr) {
+		return arr[Math.floor(Math.random() * arr.length)]
+	}
+
+	const addWord = function(acc, wordType) {
 		const possibleWords = words[wordType.phrase][wordType.word].filter(
 			function(w) { return !acc.includes(w) }
 		)
-		const randomIndex = Math.floor(Math.random() * possibleWords.length)
-		const word = possibleWords[randomIndex]
+		const word = sampleFrom(possibleWords)
 		return [...acc, word]
 	}
 
+	const randomPhraseType = function() {
+		return sampleFrom(["positive", "negative", "intransitive"])
+	}
+
 	const randomWords = function() {
+		const phraseTypes = [
+			randomPhraseType(),
+			randomPhraseType(),
+			randomPhraseType()
+		]
 		return [
-			{phrase: "positive", word: "verb"},
-			{phrase: "positive", word: "object"},
-			{phrase: "negative", word: "verb"},
-			{phrase: "negative", word: "object"}
+			{phrase: phraseTypes[0], word: "verb"},
+			{phrase: phraseTypes[0], word: "object"},
+			{phrase: phraseTypes[1], word: "verb"},
+			{phrase: phraseTypes[1], word: "object"}
 		].reduce(addWord, [])
 	}
 
