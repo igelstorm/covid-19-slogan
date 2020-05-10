@@ -141,6 +141,10 @@
 	}
 
 	@media (min-width: 640px) {
+		main {
+			max-width: 800px;
+		}
+
 		.slogan {
 			font-size: 3rem;
 		}
