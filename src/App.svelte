@@ -104,18 +104,12 @@
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
 		font-size: 1rem;
-		margin: 1.2em;
+		margin: 1.2em 0;
 	}
 
 	.slogan {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 800;
 		font-size: 3rem;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
 	}
 </style>
