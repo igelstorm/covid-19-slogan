@@ -10,10 +10,14 @@
 		]
 	}
 
-	export const word = function(type) {
-		const randomIndex = Math.floor(Math.random() * words[type].length)
-		return words[type][randomIndex]
-	};
+	export const addWord = function(acc, type) {
+		const possibleWords = words[type].filter(
+			function(w) { return !acc.includes(w) }
+		)
+		const randomIndex = Math.floor(Math.random() * possibleWords.length)
+		const word = possibleWords[randomIndex]
+		return [...acc, word]
+	}
 
 	const randomWords = function() {
 		return [
@@ -21,7 +25,7 @@
 			"noun",
 			"verb",
 			"noun"
-		].map(word)
+		].reduce(addWord, [])
 	}
 
 	export const slogan = function() {
