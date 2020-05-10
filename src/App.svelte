@@ -1,10 +1,37 @@
 <script>
-	export let name;
+	const words = {
+		noun: [
+			"coronavirus",
+			"the NHS"
+		],
+		verb: [
+			"stop",
+			"protect"
+		]
+	}
+
+	export const word = function(type) {
+		const randomIndex = Math.floor(Math.random() * words[type].length)
+		return words[type][randomIndex]
+	};
+
+	const randomWords = function() {
+		return [
+			"verb",
+			"noun",
+			"verb",
+			"noun"
+		].map(word)
+	}
+
+	export const slogan = function() {
+		const phrase = randomWords()
+		return `${phrase[0]} ${phrase[1]}. ${phrase[2]} ${phrase[3]}.`
+	}
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>{slogan()}</h1>
 </main>
 
 <style>
