@@ -110,6 +110,12 @@
 	.slogan {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 800;
-		font-size: 3rem;
+		font-size: 2rem;
+	}
+
+	@media (min-width: 640px) {
+		.slogan {
+			font-size: 3rem;
+		}
 	}
 </style>
