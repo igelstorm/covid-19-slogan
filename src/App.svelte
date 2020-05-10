@@ -88,6 +88,9 @@
 	<p>The latest advice from the UK Government:</p>
 	<p class="slogan">{slogan()}</p>
 	<p>Refresh the page for more.</p>
+	<p><small>
+		This is satire. For official advice and guidance from the UK Government, see: <a href="https://www.gov.uk/coronavirus">https://www.gov.uk/coronavirus</a>
+	</small></p>
 </main>
 
 <style>
@@ -101,6 +104,7 @@
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
 		font-size: 1rem;
+		margin: 1.2em;
 	}
 
 	.slogan {
