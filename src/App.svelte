@@ -3,17 +3,20 @@
 		positive: {
 			verb: [
 				"protect",
+				"save",
 				"help"
 			],
 			object: [
 				"the NHS",
+				"lives",
 				"the public"
 			]
 		},
 		negative: {
 			verb: [
 				"stop",
-				"kill"
+				"kill",
+				"control"
 			],
 			object: [
 				"coronavirus",
@@ -24,10 +27,12 @@
 		intransitive: {
 			verb: [
 				"stay",
-				"work"
+				"be",
+				"remain"
 			],
 			object: [
 				"at home",
+				"alert",
 				"with us"
 			]
 		}
@@ -59,13 +64,15 @@
 			{phrase: phraseTypes[0], word: "verb"},
 			{phrase: phraseTypes[0], word: "object"},
 			{phrase: phraseTypes[1], word: "verb"},
-			{phrase: phraseTypes[1], word: "object"}
+			{phrase: phraseTypes[1], word: "object"},
+			{phrase: phraseTypes[2], word: "verb"},
+			{phrase: phraseTypes[2], word: "object"}
 		].reduce(addWord, [])
 	}
 
 	export const slogan = function() {
 		const phrase = randomWords()
-		return `${phrase[0]} ${phrase[1]}. ${phrase[2]} ${phrase[3]}.`
+		return `${phrase[0]} ${phrase[1]}. ${phrase[2]} ${phrase[3]}. ${phrase[4]} ${phrase[5]}.`
 	}
 </script>
 
