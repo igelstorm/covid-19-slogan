@@ -87,6 +87,7 @@
 <main>
 	<p>The latest advice from the UK Government:</p>
 	<p class="slogan">{slogan()}</p>
+	<p>Refresh the page for more.</p>
 </main>
 
 <style>
