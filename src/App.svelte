@@ -4,36 +4,44 @@
 			verb: [
 				"Protect",
 				"Save",
-				"Help"
+				"Help",
 			],
 			object: [
 				"the NHS",
 				"lives",
-				"the public"
+				"Britain",
+				"the public",
+				"the people",
+				"key workers",
 			]
 		},
 		negative: {
 			verb: [
 				"Stop",
 				"Kill",
-				"Control"
+				"Control",
+				"Avoid",
+				"Avoid",
 			],
 			object: [
 				"coronavirus",
 				"the virus",
-				"the disease"
+				"disease",
+				"transmission",
+				"the pandemic",
 			]
 		},
 		intransitive: {
 			verb: [
 				"Stay",
-				"Be",
-				"Remain"
+				"Always be",
+				"Remain",
 			],
 			object: [
 				"at home",
 				"alert",
-				"with us"
+				"safe",
+				"with us",
 			]
 		}
 	}
