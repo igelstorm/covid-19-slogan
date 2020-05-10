@@ -18,6 +18,7 @@
 				"key workers",
 				"productivity",
 				"businesses",
+				"the GDP",
 			]
 		},
 		negative: {
@@ -52,6 +53,7 @@
 				"Stay",
 				"Always be",
 				"Remain",
+				"Keep on being",
 			],
 			object: [
 				"at home",
