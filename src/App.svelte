@@ -112,9 +112,13 @@
 	<p>The latest advice from the UK Government:</p>
 	<p class="slogan">{slogan[0]} {slogan[1]}.<br>{slogan[2]} {slogan[3]}.<br>{slogan[4]} {slogan[5]}.</p>
 	<p>Refresh the page for more.</p>
-	<p><small>
-		This is satire. For official advice and guidance from the UK Government, see: <a href="https://www.gov.uk/coronavirus">https://www.gov.uk/coronavirus</a>
-	</small></p>
+	<p class="small">This is satire. For official advice and guidance, see:</p>
+	<ul class="small">
+		<li><a href="https://www.gov.uk/coronavirus">Guidance for England</a></li>
+		<li><a href="https://www.gov.scot/coronavirus-covid-19/">Guidance for Scotland</a></li>
+		<li><a href="https://gov.wales/coronavirus">Guidance for Wales</a></li>
+		<li><a href="https://www.nidirect.gov.uk/campaigns/coronavirus-covid-19">Guidance for Northern Ireland</a></li>
+	</ul>
 </main>
 
 <style>
@@ -135,6 +139,15 @@
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 800;
 		font-size: 2rem;
+	}
+
+	.small {
+		font-size: 0.8rem;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
 	}
 
 	@media (min-width: 640px) {
